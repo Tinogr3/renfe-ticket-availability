@@ -70,7 +70,7 @@ El segundo incentivo, importante también, desde que se pusieron los billetes de
 ## Uso
 Ejecuta el script pasando los filtros deseados:
 
-También puedes usar "python main.ph -h" para ver ayuda por terminal
+También puedes usar "python main.py -h" para ver ayuda por terminal
 
 **Ejemplo: Solo trenes que salgan después de las 08:00, lleguen antes de las 22:00 y que no tarden más de 180 minutos (3 horas):**
   
