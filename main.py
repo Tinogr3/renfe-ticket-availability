@@ -98,7 +98,7 @@ def main():
                                     
                                     print(f"  ✅ ¡PLAZA ENCONTRADA!: {h_salida}")
                                     enviar_telegram(msg)
-                                    time.sleep(1) 
+                                    time.sleep(3) 
                 else:
                     print(f"[-] Error HTTP: {response.status}")
             except Exception as e:
