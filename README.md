@@ -93,7 +93,7 @@ Ya puedes minimizar el navegador (¡no lo cierres!) y el bot se quedará vigilan
 Modifica el run.sh con los parámetros de tu interés, asegurate de que los nombres sean correctos y ejecuta ./run.sh que llamará al mainAuto.py, o siempre puedes usarlo directamente e insertar parámetros en consola. Más util para ahorrar memoria ya que no tendrá que estar el navegador abierto constantemente pero fallará en el momento que modifiquen la web de renfe por eso dejo la opción manual también.
 
 ## Uso en la nube (Github Actions)
-Puedes hacer un fork del proyecto, usar el workflow ya creado que ejecuta un cron cada 5 minutos para hacer una única búsqueda, la web de renfe no lo hace pero esto evita bloqueos de ip. Tienes que configurar el token de telegram y tu chat id en los secrets del proyecto, los parámetros de búsqueda se introducen en un desplegable al darle a run workflow. ¡¡Cuidado con el número de minutos de uso gratuito de los que disponemos!!
+Puedes hacer un fork del proyecto, usar el workflow ya creado que ejecuta un cron cada 5 minutos para hacer una única búsqueda, la web de renfe no lo hace pero esto evita bloqueos de ip. Tienes que configurar el token de telegram y tu chat id en los secrets del proyecto, los parámetros de búsqueda se introducen en las variables del actions. ¡¡Cuidado con el número de minutos de uso gratuito de los que disponemos!!
 
 
 
