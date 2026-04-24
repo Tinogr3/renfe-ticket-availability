@@ -58,4 +58,4 @@ jobs:
       # 2. AQUÍ LE PASAMOS TUS INPUTS AL SCRIPT DE PYTHON
       - name: Ejecutar Bot
         run: |
-          python mainAuto.py -o "${{ inputs.origen }}" -d "${{ inputs.destino }}" -f "${{ inputs.fecha }}" -s "${{ inputs.salida }}" -l "${{ inputs.llegada }} -t "${{ inputs.duracion }}"
+          python mainAuto.py -o "${{ inputs.origen }}" -d "${{ inputs.destino }}" -f "${{ inputs.fecha }}" -s "${{ inputs.salida }}" -l "${{ inputs.llegada }}" -t "${{ inputs.duracion }}"
