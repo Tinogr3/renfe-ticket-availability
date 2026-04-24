@@ -89,6 +89,9 @@ En cuanto aparezcan los resultados, la terminal indicará [+] Petición intercep
 
 Ya puedes minimizar el navegador (¡no lo cierres!) y el bot se quedará vigilando por ti.
 
+## Uso Automatizado
+Modifica el run.sh con los parámetros de tu interés, asegurate de que los nombres sean correctos y ejecuta ./run.sh que llamará al mainAuto.py, o siempre puedes usarlo directamente e insertar parámetros en consola. Más util para ahorrar memoria ya que no tendrá que estar el navegador abierto constantemente pero fallará en el momento que modifiquen la web de renfe por eso dejo la opción manual también.
+
 
 
 ## ⚠️ Descargo de Responsabilidad
