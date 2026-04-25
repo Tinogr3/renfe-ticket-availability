@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     
     env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
       # Lee las contraseñas de Secrets
       TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
       TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
