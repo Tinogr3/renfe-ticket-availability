@@ -3,6 +3,11 @@ name: Renfe Sniper Bot
 on:
   schedule:
     - cron: '*/5 * * * *'
+
+concurrency:
+  group: renfe-bot-group
+  cancel-in-progress: true
+  
 jobs:
   buscar-billetes:
     runs-on: ubuntu-latest
@@ -36,5 +41,4 @@ jobs:
 
       - name: Ejecutar Bot
         run: |
-          # Usamos las variables de entorno que definimos arriba
           python -u mainOneExecution.py -o "$ORIGEN" -d "$DESTINO" -f "$FECHA" -s "$SALIDA" -l "$LLEGADA" -t "$DURACION"
