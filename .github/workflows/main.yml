@@ -41,4 +41,4 @@ jobs:
 
       - name: Ejecutar Bot
         run: |
-          python -u mainOneExecution.py -o "$ORIGEN" -d "$DESTINO" -f "$FECHA" -s "$SALIDA" -l "$LLEGADA" -t "$DURACION"
+          python mainOneExecution.py -o "$ORIGEN" -d "$DESTINO" -f "$FECHA" -s "$SALIDA" -l "$LLEGADA" -t "$DURACION"
