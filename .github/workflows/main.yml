@@ -3,8 +3,6 @@ name: Renfe Sniper Bot
 on:
   schedule:
     - cron: '*/5 * * * *'
-  
-  # 2. Permite lanzarlo a mano si quieres probar algo rápido
   workflow_dispatch:
 
 jobs:
@@ -41,4 +39,4 @@ jobs:
       - name: Ejecutar Bot
         run: |
           # Usamos las variables de entorno que definimos arriba
-          python -u mainAuto.py -o "$ORIGEN" -d "$DESTINO" -f "$FECHA" -s "$SALIDA" -l "$LLEGADA" -t "$DURACION"
+          python -u mainOneExecution.py -o "$ORIGEN" -d "$DESTINO" -f "$FECHA" -s "$SALIDA" -l "$LLEGADA" -t "$DURACION"
