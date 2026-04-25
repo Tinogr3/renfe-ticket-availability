@@ -135,9 +135,9 @@ def main():
     print("    🚄 RENFE BOT TICKET AVAILABILITY")
     print("    =========================================\n")
 
-    continue = True
+    billetes_encontrados = False
 
-    while continue:
+    while not billetes_encontrados:
         print(f"\n[*] {time.strftime('%H:%M:%S')} - Abriendo navegador e iniciando búsqueda...")
         
         # 1. Ejecutar ciclo completo de navegador
@@ -172,11 +172,11 @@ def main():
                         print(f"  ✅ ¡PLAZA ENCONTRADA!: Salida a las {h_salida} por {precio}€")
                         enviar_telegram(msg)
                         time.sleep(2) # Pausa breve para no saturar la API de Telegram si hay varios
-                        continue = False
+                        billetes_encontrados = True
         else:
             print("[-] No se interceptaron datos válidos en este ciclo (posible error de carga o sin trenes).")
 
-        if continue == True:
+        if not billetes_encontrados:
             minutos_espera = random.randint(3, 5)
             print(f"[*] Fin del ciclo. Durmiendo {minutos_espera} minutos para no levantar sospechas...")
             time.sleep(minutos_espera * 60)
